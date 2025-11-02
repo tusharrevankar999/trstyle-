@@ -13,7 +13,9 @@ import FormattedPrice from "./FormattedPrice";
 import Link from "next/link";
 import { addUser, deleteUser } from "@/redux/shoppingSlice";
 import { BsBookmarks } from "react-icons/bs";
-import { logEvent } from "@/lib/firebase";
+import { logEvent, saveUserToFirestore } from "@/lib/firebase";
+import { useFirebaseAuth } from "@/hooks/useFirebaseAuth";
+import { useFirestoreUser } from "@/hooks/useFirestoreUser";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -22,9 +24,31 @@ const Header = () => {
     (state: StateProps) => state.shopping
   );
   const loginTracked = useRef<string | null>(null);
+  
+  // Firebase Auth user data
+  const { user: firebaseUser, loading: firebaseLoading } = useFirebaseAuth();
+  
+  // Get user data from Firestore (using email as userId)
+  const firestoreUserId = session?.user?.email || firebaseUser?.email || null;
+  const { userData: firestoreUserData, loading: firestoreLoading } = useFirestoreUser(firestoreUserId);
 
   useEffect(() => {
     if (session) {
+      const userEmail = session.user?.email || "";
+      const userId = userEmail || session.user?.name || "";
+      
+      // Save user data to Firestore
+      if (userId) {
+        saveUserToFirestore(userId, {
+          name: session.user?.name || null,
+          email: session.user?.email || null,
+          image: session.user?.image || null,
+          provider: "next-auth-google",
+        }).catch((error) => {
+          console.error("Failed to save user to Firestore:", error);
+        });
+      }
+
       dispatch(
         addUser({
           name: session?.user?.name,
@@ -32,8 +56,8 @@ const Header = () => {
           image: session?.user?.image,
         })
       );
+      
       // Track login event to Firebase Analytics (only once per session)
-      const userEmail = session.user?.email || "";
       if (loginTracked.current !== userEmail) {
         try {
           logEvent("login", {
@@ -51,6 +75,59 @@ const Header = () => {
       loginTracked.current = null;
     }
   }, [session, dispatch]);
+
+  // Monitor Firebase Auth user data
+  useEffect(() => {
+    if (firebaseUser) {
+      console.log("Firebase Auth User Data:", {
+        uid: firebaseUser.uid,
+        email: firebaseUser.email,
+        displayName: firebaseUser.displayName,
+        photoURL: firebaseUser.photoURL,
+        emailVerified: firebaseUser.emailVerified,
+      });
+      
+      // Save Firebase Auth user to Firestore
+      if (firebaseUser.email || firebaseUser.uid) {
+        const userId = firebaseUser.email || firebaseUser.uid;
+        saveUserToFirestore(userId, {
+          name: firebaseUser.displayName || null,
+          email: firebaseUser.email || null,
+          image: firebaseUser.photoURL || null,
+          provider: "firebase-auth-google",
+        }).catch((error) => {
+          console.error("Failed to save Firebase Auth user to Firestore:", error);
+        });
+      }
+      
+      // Optionally sync Firebase Auth user to Redux
+      // You can use this data alongside or instead of NextAuth
+      if (!session) {
+        dispatch(
+          addUser({
+            name: firebaseUser.displayName || firebaseUser.email || "",
+            email: firebaseUser.email || "",
+            image: firebaseUser.photoURL || "",
+          })
+        );
+      }
+    } else if (!firebaseLoading && !firebaseUser) {
+      // User is not authenticated with Firebase Auth
+      console.log("No Firebase Auth user found");
+      if (!session) {
+        dispatch(deleteUser());
+      }
+    }
+  }, [firebaseUser, firebaseLoading, session, dispatch]);
+
+  // Log Firestore user data when available
+  useEffect(() => {
+    if (firestoreUserData) {
+      console.log("User data from Firestore:", firestoreUserData);
+    } else if (!firestoreLoading && firestoreUserId && !firestoreUserData) {
+      console.log("No user data found in Firestore for:", firestoreUserId);
+    }
+  }, [firestoreUserData, firestoreLoading, firestoreUserId]);
 
   const [totalAmt, setTotalAmt] = useState(0);
 
