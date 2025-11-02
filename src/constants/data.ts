@@ -6,7 +6,7 @@ export const productData = [
     oldPrice: "200",
     price: 150,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/portrait-beautiful-face-young-woman-with-long-brown-hair_186202-4331.jpg?size=626&ext=jpg&ga=GA1.1.453157835.1694346094&semt=sph",
@@ -20,7 +20,7 @@ export const productData = [
     oldPrice: "70",
     price: 65,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/studio-close-up-portrait-young-fresh-blonde-woman-brown-straw-poncho-wool-black-trendy-hat-round-glasses-looking-camera-green-leather-had-bag_273443-1121.jpg?size=626&ext=jpg&ga=GA1.2.453157835.1694346094&semt=sph",
@@ -34,7 +34,7 @@ export const productData = [
     oldPrice: "70",
     price: 55.99,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/young-woman-fluffy-jacket-red-sunglasses-looking-into-camera_197531-15044.jpg?size=626&ext=jpg&ga=GA1.2.453157835.1694346094&semt=sph",
@@ -48,7 +48,7 @@ export const productData = [
     oldPrice: "70",
     price: 50,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/fashionable-woman-pink-coat-black-hat-posing_273443-2429.jpg?size=626&ext=jpg&ga=GA1.1.453157835.1694346094&semt=sph",
@@ -62,7 +62,7 @@ export const productData = [
     oldPrice: "800",
     price: 695,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/curly-woman-elegant-hat-looking-camera-studio-shot-fascinating-blonde-girl-striped-shirt_197531-13243.jpg?size=626&ext=jpg&ga=GA1.2.453157835.1694346094&semt=ais",
@@ -76,7 +76,7 @@ export const productData = [
     oldPrice: "200",
     price: 180,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "men",
     image:
       "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -90,7 +90,7 @@ export const productData = [
     oldPrice: "60",
     price: 20,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/2010812/pexels-photo-2010812.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -104,7 +104,7 @@ export const productData = [
     oldPrice: "500",
     price: 350,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/2233703/pexels-photo-2233703.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -118,7 +118,7 @@ export const productData = [
     oldPrice: "150",
     price: 100,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/2065195/pexels-photo-2065195.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -132,7 +132,7 @@ export const productData = [
     oldPrice: "250",
     price: 245,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "men",
     image:
       "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -146,7 +146,7 @@ export const productData = [
     oldPrice: "1000",
     price: 800,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/premium-photo/woman-yellow-shirt-with-word-love-it_873925-155207.jpg?size=626&ext=jpg&ga=GA1.2.453157835.1694346094&semt=ais",
@@ -160,7 +160,7 @@ export const productData = [
     oldPrice: "200",
     price: 140,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "men",
     image:
       "https://images.pexels.com/photos/983497/pexels-photo-983497.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -174,7 +174,7 @@ export const productData = [
     oldPrice: "130",
     price: 120,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/3672825/pexels-photo-3672825.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -188,7 +188,7 @@ export const productData = [
     oldPrice: "80",
     price: 50,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "kids",
     image:
       "https://img.freepik.com/free-photo/small-girl-stands-near-table_8353-5344.jpg?size=626&ext=jpg&ga=GA1.2.453157835.1694346094&semt=ais",
@@ -202,7 +202,7 @@ export const productData = [
     oldPrice: "120",
     price: 100,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/2738792/pexels-photo-2738792.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -216,7 +216,7 @@ export const productData = [
     oldPrice: "400",
     price: 350,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "men",
     image:
       "https://images.pexels.com/photos/2866077/pexels-photo-2866077.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -230,7 +230,7 @@ export const productData = [
     oldPrice: "140",
     price: 120,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/2010925/pexels-photo-2010925.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -244,7 +244,7 @@ export const productData = [
     oldPrice: "250",
     price: 190,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/3054973/pexels-photo-3054973.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -258,7 +258,7 @@ export const productData = [
     oldPrice: "180",
     price: 170,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/2693849/pexels-photo-2693849.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -272,7 +272,7 @@ export const productData = [
     oldPrice: "500",
     price: 490,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -288,7 +288,7 @@ export const trendingProducts = [
     oldPrice: "200",
     price: 150,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/portrait-beautiful-face-young-woman-with-long-brown-hair_186202-4331.jpg?size=626&ext=jpg&ga=GA1.1.453157835.1694346094&semt=sph",
@@ -302,7 +302,7 @@ export const trendingProducts = [
     oldPrice: "70",
     price: 65,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/studio-close-up-portrait-young-fresh-blonde-woman-brown-straw-poncho-wool-black-trendy-hat-round-glasses-looking-camera-green-leather-had-bag_273443-1121.jpg?size=626&ext=jpg&ga=GA1.2.453157835.1694346094&semt=sph",
@@ -316,7 +316,7 @@ export const trendingProducts = [
     oldPrice: "70",
     price: 55.99,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/young-woman-fluffy-jacket-red-sunglasses-looking-into-camera_197531-15044.jpg?size=626&ext=jpg&ga=GA1.2.453157835.1694346094&semt=sph",
@@ -330,7 +330,7 @@ export const trendingProducts = [
     oldPrice: "70",
     price: 50,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla non magni facili blanditiis molestias soluta eveniet illum accusantium eius mollitia eligendi, ex iste doloribus magnam.",
+      "Crafted with premium fabrics and designed for everyday comfort, this piece blends modern style with effortless elegance. Perfect for any occasion — from casual outings to chic evenings — it adds confidence and class to your wardrobe.",
     category: "women",
     image:
       "https://img.freepik.com/free-photo/fashionable-woman-pink-coat-black-hat-posing_273443-2429.jpg?size=626&ext=jpg&ga=GA1.1.453157835.1694346094&semt=sph",

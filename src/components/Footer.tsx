@@ -19,10 +19,7 @@ const Footer = () => {
         <div className="flex flex-col gap-y-4">
           <Logo />
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa in
-            sint incidunt, minima quos voluptates, nobis autem laborum earum est
-            pariatur aperiam. Delectus consectetur maxime quidem veniam,
-            corporis.
+            Fashion is more than fabric — it’s a statement. At TRStyle, we blend comfort, creativity, and confidence to craft outfits that define your personality. Every piece is designed to elevate your everyday look while staying true to modern trends and timeless style.
           </p>
           <div className="flex items-center gap-x-4">
             <a href="https://www.youtube.com/@reactjsBD" target="_blank">
@@ -57,25 +54,25 @@ const Footer = () => {
           <ul className="text-sm font-light mt-2 flex flex-col gap-y-2">
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
-                Where Music Is Headed Next
+                Where Fashion Is Headed Next
               </span>
               <span className="text-orange-600">January 31, 2022</span>
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
-                Where Music Is Headed Next
+              The Beat of New-Age Fashion
               </span>
               <span className="text-orange-600">January 31, 2022</span>
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
-                Where Music Is Headed Next
+                Where Fashion Is Headed Next
               </span>
               <span className="text-orange-600">January 31, 2022</span>
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
-                Where Music Is Headed Next
+              Fashion That Moves With You
               </span>
               <span className="text-orange-600">January 31, 2022</span>
             </li>
