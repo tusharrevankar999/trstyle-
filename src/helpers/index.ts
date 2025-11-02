@@ -1,20 +1,13 @@
-import { productData } from "@/constants/data";
+import { productData, trendingProducts } from "@/constants/data";
 
 export const getProducts = async () => {
-  const res = await fetch("https://fakestoreapiserver.reactbd.com/smart");
-  if (!res.ok) {
-    throw new Error("Faild to fetch products");
-  }
-  return res.json();
+  // Return static product data
+  return productData;
 };
+
 export const getTrendingProducts = async () => {
-  const res = await fetch(
-    "https://fakestoreapiserver.reactbd.com/smarttrending"
-  );
-  if (!res.ok) {
-    throw new Error("Faild to fetch products");
-  }
-  return res.json();
+  // Return static trending products data
+  return trendingProducts;
 };
 
 export const calculatePercentage = (oldPrice: any, price: any) => {
@@ -26,4 +19,18 @@ export const calculatePercentage = (oldPrice: any, price: any) => {
 export const getSingleProudct = (_id: number) => {
   const item = productData.find((product) => product._id === _id);
   return item;
+};
+
+// Search products by query string
+export const searchProducts = (query: string) => {
+  if (!query || query.trim() === "") {
+    return productData;
+  }
+  
+  const searchTerm = query.toLowerCase().trim();
+  return productData.filter((product) => 
+    product.title.toLowerCase().includes(searchTerm) ||
+    product.description.toLowerCase().includes(searchTerm) ||
+    product.category.toLowerCase().includes(searchTerm)
+  );
 };

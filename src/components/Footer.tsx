@@ -22,27 +22,27 @@ const Footer = () => {
             Fashion is more than fabric — it’s a statement. At TRStyle, we blend comfort, creativity, and confidence to craft outfits that define your personality. Every piece is designed to elevate your everyday look while staying true to modern trends and timeless style.
           </p>
           <div className="flex items-center gap-x-4">
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://www.instagram.com/tr_dev.tech/" target="_blank">
               <span className="socialLink">
                 <BsYoutube />
               </span>
             </a>
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://www.instagram.com/tr_dev.tech/" target="_blank">
               <span className="socialLink">
                 <BsGithub />
               </span>
             </a>
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://www.instagram.com/tr_dev.tech/" target="_blank">
               <span className="socialLink">
                 <BsLinkedin />
               </span>
             </a>
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://www.instagram.com/tr_dev.tech/" target="_blank">
               <span className="socialLink">
                 <BsFacebook />
               </span>
             </a>
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://www.instagram.com/tr_dev.tech/" target="_blank">
               <span className="socialLink">
                 <BsReddit />
               </span>
@@ -111,6 +111,18 @@ const Footer = () => {
             alt="payment banner image"
             className="w-full h-10 object-cover"
           />
+          <div className="mt-6">
+            <p className="text-lg mb-3">Contributors</p>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white font-semibold text-sm">
+                TR
+              </div>
+              <div>
+                <p className="text-sm font-semibold">tusharrevanakar999</p>
+                <p className="text-xs text-gray-400">Developer</p>
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </div>
