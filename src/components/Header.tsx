@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Container from "./Container";
 import Logo from "./Logo";
 import { IoMdCart } from "react-icons/io";
@@ -13,6 +13,7 @@ import FormattedPrice from "./FormattedPrice";
 import Link from "next/link";
 import { addUser, deleteUser } from "@/redux/shoppingSlice";
 import { BsBookmarks } from "react-icons/bs";
+import { logEvent } from "@/lib/firebase";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const Header = () => {
   const { productData, orderData } = useSelector(
     (state: StateProps) => state.shopping
   );
+  const loginTracked = useRef<string | null>(null);
 
   useEffect(() => {
     if (session) {
@@ -30,8 +32,23 @@ const Header = () => {
           image: session?.user?.image,
         })
       );
+      // Track login event to Firebase Analytics (only once per session)
+      const userEmail = session.user?.email || "";
+      if (loginTracked.current !== userEmail) {
+        try {
+          logEvent("login", {
+            method: "google",
+            user_id: userEmail,
+            user_email: userEmail,
+          });
+          loginTracked.current = userEmail;
+        } catch (error) {
+          console.error("Failed to log login event:", error);
+        }
+      }
     } else {
       dispatch(deleteUser());
+      loginTracked.current = null;
     }
   }, [session, dispatch]);
 
