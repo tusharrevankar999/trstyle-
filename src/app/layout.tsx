@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: {
     template: "shopping_mart",
-    default: "Shopping Mart - A place for all!",
+    default: "TRStyle Smart. Sharp. Styled",
   },
 };
 
