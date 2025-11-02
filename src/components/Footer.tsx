@@ -60,7 +60,7 @@ const Footer = () => {
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
-              The Beat of New-Age Fashion
+                The Beat of New-Age Fashion
               </span>
               <span className="text-orange-600">January 31, 2022</span>
             </li>
@@ -72,7 +72,7 @@ const Footer = () => {
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
-              Fashion That Moves With You
+                Fashion That Moves With You
               </span>
               <span className="text-orange-600">January 31, 2022</span>
             </li>
@@ -112,14 +112,21 @@ const Footer = () => {
             className="w-full h-10 object-cover"
           />
           <div className="mt-6">
-            <p className="text-lg mb-3">Contributors</p>
+            <p className="text-lg mb-3">Developed by</p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white font-semibold text-sm">
                 TR
               </div>
               <div>
-                <p className="text-sm font-semibold">tusharrevanakar999</p>
-                <p className="text-xs text-gray-400">Developer</p>
+                <a
+                  href="https://www.instagram.com/tr_dev.tech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold hover:text-orange-500 transition-colors duration-200"
+                >
+                  tr_dev.tech
+                </a>
+                {/* <p className="text-xs text-gray-400">Developer</p> */}
               </div>
             </div>
           </div>
