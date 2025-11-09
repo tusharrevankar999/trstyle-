@@ -22,6 +22,5 @@ export interface StateProps {
     orderData: {
       order: Products[];
     };
-    searchQuery: string;
   };
 }

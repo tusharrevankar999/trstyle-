@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Products, StateProps } from "../../type";
 import FormattedPrice from "./FormattedPrice";
 import Link from "next/link";
-import { addUser, deleteUser, setSearchQuery } from "@/redux/shoppingSlice";
+import { addUser, deleteUser } from "@/redux/shoppingSlice";
 import { BsBookmarks } from "react-icons/bs";
 import { logEvent, saveUserToFirestore } from "@/lib/firebase";
 import { useFirebaseAuth } from "@/hooks/useFirebaseAuth";
@@ -130,7 +130,6 @@ const Header = () => {
   }, [firestoreUserData, firestoreLoading, firestoreUserId]);
 
   const [totalAmt, setTotalAmt] = useState(0);
-  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     let amt = 0;
@@ -140,21 +139,6 @@ const Header = () => {
     });
     setTotalAmt(amt);
   }, [productData]);
-
-  // Handle search input change
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setSearchInput(value);
-    dispatch(setSearchQuery(value));
-  };
-
-  // Clear search on Escape key
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Escape") {
-      setSearchInput("");
-      dispatch(setSearchQuery(""));
-    }
-  };
 
   return (
     <div className="bg-bodyColor h-20 top-0 sticky z-50">
@@ -167,9 +151,6 @@ const Header = () => {
             type="text"
             placeholder="Search for products"
             className="placeholder:text-sm flex-1 outline-none"
-            value={searchInput}
-            onChange={handleSearchChange}
-            onKeyDown={handleKeyDown}
           />
         </div>
         {/* Login/Register */}
