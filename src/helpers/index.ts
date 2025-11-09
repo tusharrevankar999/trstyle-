@@ -1,11 +1,12 @@
 import { productData, trendingProducts } from "@/constants/data";
+import type { Products } from "../../type";
 
-export const getProducts = async () => {
+export const getProducts = async (): Promise<Products[]> => {
   // Return static product data
   return productData;
 };
 
-export const getTrendingProducts = async () => {
+export const getTrendingProducts = async (): Promise<Products[]> => {
   // Return static trending products data
   return trendingProducts;
 };

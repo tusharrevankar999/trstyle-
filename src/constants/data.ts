@@ -1,4 +1,6 @@
-export const productData = [
+import type { Products } from "../../type";
+
+export const productData: Products[] = [
   {
     _id: 1,
     title: "Long sleeve Jacket",
@@ -280,7 +282,7 @@ export const productData = [
     quantity: 1,
   },
 ];
-export const trendingProducts = [
+export const trendingProducts: Products[] = [
   {
     _id: 1,
     title: "Long sleeve Jacket",
