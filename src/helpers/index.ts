@@ -1,14 +1,23 @@
 import { productData, trendingProducts } from "@/constants/data";
 import type { Products } from "../../type";
 
+const normalizeProducts = (items: Products[]): Products[] =>
+  items.map((item) => ({
+    ...item,
+    oldPrice: Number(item.oldPrice),
+    price: Number(item.price),
+    rating: Number(item.rating),
+    quantity: Number(item.quantity),
+  }));
+
 export const getProducts = async (): Promise<Products[]> => {
-  // Return static product data
-  return productData;
+  // Return normalized static product data
+  return normalizeProducts(productData);
 };
 
 export const getTrendingProducts = async (): Promise<Products[]> => {
-  // Return static trending products data
-  return trendingProducts;
+  // Return normalized static trending products data
+  return normalizeProducts(trendingProducts);
 };
 
 export const calculatePercentage = (oldPrice: any, price: any) => {
